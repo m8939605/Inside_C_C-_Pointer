@@ -1,8 +1,11 @@
-address-3: address-3.o
-	gcc address-3.o -o address-3
+all: address-3 address-5
 
-address-3.o: address-3.c
-	gcc -c address-3.c -o address-3.o
+address-3: address-3.c
+	gcc -o address-3 address-3.c
+
+address-5: address-5.c
+	gcc -o address-5 address-5.c
+
 
 clean:
-	rm *.o address-3
+	rm address-3 address-5
